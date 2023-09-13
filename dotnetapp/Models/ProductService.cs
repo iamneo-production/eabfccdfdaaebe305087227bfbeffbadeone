@@ -24,6 +24,8 @@ namespace dotnetapp.Models
         }
         public bool AddProduct(Product product)
         {
+            _dbContext.save(product);
+            _dbContext.saveChanges();
             return false;
         }
 
