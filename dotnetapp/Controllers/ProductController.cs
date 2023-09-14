@@ -35,10 +35,11 @@ namespace dotnetapp.Controllers
       return res;
     }   
 
+    [HttpDelete]
     public bool DeleteProduct (int id)
     {
-      bool res=productService.DeleteProduct
-   return false; 
+      bool res=productService.DeleteProduct(id);
+    return res; 
     }
     }
 }
