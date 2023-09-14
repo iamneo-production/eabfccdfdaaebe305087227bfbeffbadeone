@@ -27,7 +27,8 @@ namespace dotnetapp.Controllers
     }
 
     public bool AddProduct(Product newProduct)
-    {         
+    { 
+              
       return false;
     }   
 
