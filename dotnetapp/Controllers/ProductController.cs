@@ -37,6 +37,7 @@ namespace dotnetapp.Controllers
 
     public bool DeleteProduct (int id)
     {
+      bool res=productService.DeleteProduct
    return false; 
     }
     }
