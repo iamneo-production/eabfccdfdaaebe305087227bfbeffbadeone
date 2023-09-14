@@ -26,9 +26,10 @@ namespace dotnetapp.Controllers
         return null;
     }
 
+    [HttpPost]
     public bool AddProduct(Product newProduct)
     {   
-      bool res=_productService.AddProduct(newProduct);
+      bool res=productService.AddProduct(newProduct);
       return res;
     }   
 
