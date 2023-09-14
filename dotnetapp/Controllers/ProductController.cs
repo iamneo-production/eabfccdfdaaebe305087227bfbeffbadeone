@@ -28,11 +28,7 @@ namespace dotnetapp.Controllers
 
     public bool AddProduct(Product newProduct)
     {         
-       if(newProduct==null){
-        return false;
-       }  
-       var res=_productService.AddProduct(newProduct);
-       return res;          
+      return false;
     }   
 
     public bool DeleteProduct (int id)
