@@ -24,8 +24,15 @@ namespace dotnetapp.Models
         }
         public bool AddProduct(Product product)
         {
-            
+            if(product==null){
             return false;
+            }
+            else{
+                _dbContext.Add(product);
+                _dbContext.SaveChanges();
+                
+            }
+            return true;
         }
 
         public bool DeleteProduct(int Id)
