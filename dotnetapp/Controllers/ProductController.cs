@@ -25,7 +25,7 @@ namespace dotnetapp.Controllers
     public IQueryable<Product> GetAll()
     {
         IQueryable<Product> list=productService.GetProductList();
-        return null;
+        return list;
     }
 
     [HttpPost]
